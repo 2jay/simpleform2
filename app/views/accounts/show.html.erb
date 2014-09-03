@@ -1,0 +1,45 @@
+<h1>Show Account</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User name:</b>
+  <%= @account.user_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @account.description %>
+</p>
+
+<p>
+  <b>Premium:</b>
+  <%= @account.premium %>
+</p>
+
+<p>
+  <b>Income:</b>
+  <%= @account.income %>
+</p>
+
+<p>
+  <b>Ranking:</b>
+  <%= @account.ranking %>
+</p>
+
+<p>
+  <b>Fee:</b>
+  <%= @account.fee %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @account.birthday %>
+</p>
+
+<p>
+  <b>Login Time:</b>
+  <%= @account.login_time %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
